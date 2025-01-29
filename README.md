@@ -1,1 +1,1 @@
-# curriculo
+https://byancasouza.github.io/curriculo/
