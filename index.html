@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css - bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <!-- <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+            </div> -->
+            
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <div class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Estudos
+                            </div>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#escolaridade">Escolaridade</a></li>
+                              <li><a class="dropdown-item" href="#certificados">Certificados</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#habilidades">Habilidaes e qualificações</a></li>
+                    <li><a href="#portifolio">Portifólio</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#contato">
+                    <button>Contato</button>
+                </a>
+            </div>
+
+            <div class="menu-mobile">
+                <button id="menu-toggle"><i class="fa fa-bars"></i></button>
+                <nav id="mobile-nav">
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#escolaridade">Escolaridade</a></li>
+                        <li><a href="#certificados">Certificados</a></li>
+                        <li><a href="#habilidades">Habilidaes e qualificações</a></li>
+                        <li><a href="#portifolio">Portifólio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-nav').classList.toggle('active');
+        });
+    </script>
+
+    <main>
+
+        <section class="topo-site">
+
+            <div class="interface">
+
+                <!-- lado a lado -->
+                <div class="flex">
+
+                    <div class="txt-topo-site"> <!-- lado esquerdo -->
+
+                        <div contenteditable="true" class="texto">
+                            OLÁ, EU SOU A BYANCA LOURENÇO!
+                        </div><!--texto-->
+
+                        <p> Seja bem vindo(a) ao meu portifólio <br> Confira quem sou eu, minhas habilidades, competências, projetos e mais! </p>
+
+                        <div class="btn-contato">
+                            <a href="#contato">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+
+                    </div> <!-- txt-topo-site -->
+
+                    <div class="img-topo-site"> <!-- lado direito -->
+                        <img src="img/img-topo3.png" alt="">
+                    </div>
+
+                </div> <!-- flex -->
+
+            </div> <!-- interface -->
+
+        </section>
+
+        <section class="sobre" id="sobre">
+
+            <div class="interface">
+
+                <div class="flex">
+
+                    <div class="img-sobre">
+                        <img src="img/foto-sobre.png" alt="">
+                    </div> <!-- img-sobre -->
+
+                    <div class="txt-sobre">
+
+                        <h2 class="titulo">MUITO PRAZER, SOU <span> BYANCA LOURENÇO!</span> </h2>
+                        <p>Me chamo Byanca Lourenço Souza, tenho 16 anos, resido no município de Mauá, São Paulo. Sou estudante da ETEC Professora Maria Cristina Medeiro. Faço ensino médio com curso técnico integrado de informática para internet. No momento estou aprendendo e procurando aprimorar meus conhecimentos em HTML, CSS e JavaScript. Faço curso de inglês na escola de idiomas Wizard há dois anos, e continuo me aprofundando no idioma.</p>
+                        <p>Estou entusiasmada com a oportunidade de trazer minha experiência e habilidades para o mercado de trabalho!</p>
+
+                        <div class="btn-social">
+
+                            <a target="_blank" href="https://www.instagram.com/byalourenco_/?next=%2F"><button><i class="fa-brands fa-instagram"></i></button></a>
+                            <a target="_blank" href="https://github.com/byancalourenco"><button><i class="fa-brands fa-github"></i></button></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/byanca-louren%C3%A7o-1aa103351/"><button><i class="fa-brands fa-linkedin"></i></button></a>
+                            
+                        </div> <!-- btn-social -->
+
+
+                    </div> <!-- txt-sobre -->
+
+                </div> <!-- flex -->
+
+            </div> <!-- interface -->
+
+        </section>
+
+        <section class="time" id="escolaridade">
+
+            <div class="interface">
+
+                <h2 class="titulo"> ESCOLARIDADE </h2>
+                <div class="timeline">
+
+                    <!-- container 1 -->
+
+                    <div class="container-time left-container">
+                        <img src="img/rs.png" alt="">
+                        <div class="text-box-time">
+                            <h2>Colégio Raios de Sol</h2>
+                            <small>2016 - 2023</small>
+                            <p class="branco">Concluí o ensino fundamental, etapa importante da minha formação, onde adquiri uma base sólida de conhecimentos que agora me ajudam na continuidade dos meus estudos.</p>
+                        </div> <!-- text-box-time -->
+                    </div>  <!-- container-time -->
+
+                    <!-- container 2 -->
+
+                    <div class="container-time right-container">
+                        <img src="img/wiz.png" alt="">
+                        <div class="text-box-time">
+                            <h2>Escola de idiomas Wizard</h2>
+                            <small>2022 - ...</small>
+                            <p class="branco">Também estudo e procuro me aprofundar cada vez mais em outros idiomas, e escolhi começar pelo inglês.</p>
+                        </div> <!-- text-box-time -->
+                    </div>  <!-- container-time -->
+
+                    <!-- container 3 -->
+
+                    <div class="container-time left-container">
+                        <img src="img/mcm.png" alt="">
+                        <div class="text-box-time">
+                            <h2>ETEC Professora Maria Cristina Medeiros (MCM)</h2>
+                            <small>2024 - 2026</small>
+                            <p class="branco">Neste momento, estou no processo de conclusão do ensino médio, dedicando-me aos estudos e adquirindo conhecimentos que serão fundamentais para o meu desenvolvimento acadêmico e futuro profissional.</p>
+                        </div> <!-- text-box-time -->
+                    </div>  <!-- container-time -->
+
+                    <!-- container 4 -->
+
+                   <!--  <div class="container-time right-container">
+                        <img src="img/toyota.png" alt="">
+                        <div class="text-box-time">
+                            <h2>lorem ispum</h2>
+                            <small>2021 - 2022</small>
+                            <p class="branco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ipsa? Inventore, nobis reprehenderit ipsam quas explicabo beatae iste saepe omnis a commodi assumenda ipsa nam laborum voluptates quasi ducimus excepturi?</p>
+                        </div> 
+                    </div>  -->
+
+                    <!-- container 5 -->
+
+                   <!--  <div class="container-time left-container">
+                        <img src="img/flipkart.png" alt="">
+                        <div class="text-box-time">
+                            <h2>lorem ispum</h2>
+                            <small>2021 - 2022</small>
+                            <p class="branco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ipsa? Inventore, nobis reprehenderit ipsam quas explicabo beatae iste saepe omnis a commodi assumenda ipsa nam laborum voluptates quasi ducimus excepturi?</p>
+                        </div> 
+                    </div> --> 
+
+                    <!-- container 6 -->
+     
+                    <!-- <div class="container-time right-container">
+                        <img src="img/youtube.png" alt="">
+                        <div class="text-box-time">
+                            <h2>lorem ispum</h2>
+                            <small>2021 - 2022</small>
+                            <p class="branco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ipsa? Inventore, nobis reprehenderit ipsam quas explicabo beatae iste saepe omnis a commodi assumenda ipsa nam laborum voluptates quasi ducimus excepturi?</p>
+                        </div> 
+                    </div>  --> 
+    
+                </div> <!-- timeline -->
+
+            </div> <!-- interface -->
+
+
+            
+        
+        </section>
+
+        <section class="especialidades" id="certificados">
+
+            <div class="interface">
+
+                <h2 class="titulo">MEUS CERTIFICADOS</h2>
+
+                <div class="flex">
+
+                    <div class="especialidades-box">
+
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Inclusividade</h3>
+                        <p>O curso promove conhecimento e reflexão para ampliar a consciência sobre o ser humano.</p>
+
+                        <div class="btn-contato">
+                            <a target="_blank" href="img/cert-inclu.png">
+                                <button>Veja o certificado</button>
+                            </a>
+                        </div>
+                        
+                        
+                    </div> <!-- especialidades-box -->
+
+                    <div class="especialidades-box">
+
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <h3>Educação Financeira</h3>
+                        <p>Aprender a identificar seu perfil financeiro, gerenciar suas finanças e entender investimentos e sustentabilidade.</p>
+
+                        <div class="btn-contato">
+                            <a target="_blank" href="img/cert-dindin.png">
+                                <button>Veja o certificado</button>
+                            </a>
+                        </div>
+
+                    </div> <!-- especialidades-box -->
+
+                    <div class="especialidades-box">
+
+                        <i class="fa-solid fa-brain"></i>
+                        <h3>Processo de Julgamento e Tomada de Decisões Responsáveis</h3>
+                        <p>Aprender a diferença entre dois sistemas de pensamento e como reduzir erros de julgamento com estratégias cognitivas e comportamentais.</p>
+
+                        <div class="btn-contato">
+                            <a target="_blank" href="img/cert-tomada.png">
+                                <button>Veja o certificado</button>
+                            </a>
+                        </div>
+                        
+                    </div> <!-- especialidades-box -->
+
+                </div> <!-- flex -->
+
+
+            </div> <!-- interface -->
+
+        </section>
+
+        <section class="habilidades-competencias" id="habilidades">
+
+            <div class="container grid text-center">
+
+                <div class="row">
+
+                  <div class="col">
+                        <h2 class="titulo">HABILIDADES</h2>
+
+                        <li>
+                            <h3 class="ling">Html</h3>
+                            <span class="bar"><span class="html"></span></span>
+                        </li>
+
+                        <li>
+                            <h3 class="ling">Css</h3>
+                            <span class="bar"><span class="css"></span></span>
+                        </li>
+
+                        <li>
+                            <h3 class="ling">Javascript</h3>
+                            <span class="bar"><span class="javascript"></span></span>
+                        </li>
+
+                        <li>
+                            <h3 class="ling">Python</h3>
+                            <span class="bar"><span class="python"></span></span>
+                        </li>
+
+                        <li>
+                            <h3 class="ling">Photoshop</h3>
+                            <span class="bar"><span class="photoshop"></span></span>
+                        </li>
+
+                        <li>
+                            <h3 class="ling">Illustraitor</h3>
+                            <span class="bar"><span class="illustraitor"></span></span>
+                        </li>
+                  </div>
+
+                  <div class="col">
+                    <h2 class="titulo">QUALIFICAÇÕES</h2>
+
+                    <div class="cards">
+                        <ul>
+                            <li class="card">
+                                <a href="#">
+                                    <i class="fa-solid fa-people-group tam"></i>
+                                    <span class="descricao">
+                                        Trabalho em grupo
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="cards">
+                        <ul>
+                            <li class="card">
+                                <a href="#">
+                                    <i class="fa-solid fa-lightbulb tam"></i>
+                                    <span class="descricao">
+                                        Proatividade
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="cards">
+                        <ul>
+                            <li class="card">
+                                <a href="#">
+                                    <i class="fa-solid fa-check tam"></i>
+                                    <span class="descricao">
+                                        Comprometimento
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="cards">
+                        <ul>
+                            <li class="card">
+                                <a href="#">
+                                    <i class="fa-solid fa-list tam"></i>
+                                    <span class="descricao">
+                                        Organização
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="cards">
+                        <ul>
+                            <li class="card">
+                                <a href="#">
+                                    <i class="fa-regular fa-face-smile tam"></i>
+                                    <span class="descricao">
+                                        Colaboração
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+        </section>
+
+        <section class="portifolio" id="portifolio">
+
+            <div class="interface">
+
+                <h2 class="titulo">PORTIFÓLIO</h2>
+
+                <div class="flex">
+
+                    <div class="img-port" style="background-image: url(img/1.png);">
+                        <div class="overlay">
+                            <div class="baixo">
+                                <p> Site Divertidamente</p> 
+                              
+                                <div class="btn-contato">
+                                    <a target="_blank" href="https://byancasouza.github.io/divertidamente/">
+                                        <button>Prévia</button>
+                                    </a>
+                                </div>
+                              </div>
+                        </div>  <!-- overlay -->
+                    </div> <!-- img-port -->
+
+                    <div class="img-port" style="background-image: url(img/2.png);">
+                        <div class="overlay">
+                            <div class="baixo">
+                                <p> Meu primeiro site <br> Tema: Marvel </p> 
+                              
+                                <div class="btn-contato">
+                                    <a target="_blank" href="https://byancalourenco.github.io/meuprimeirosite">
+                                        <button>Prévia</button>
+                                    </a>
+                                </div>
+                              </div>
+                        </div>  <!-- overlay -->
+                    </div> <!-- img-port -->
+
+                    <div class="img-port" style="background-image: url(img/3.png);">
+                        <div class="overlay">
+                          <div class="baixo">
+                            <p> Site para perfil <br> no instagram</p> 
+                          
+                            <div class="btn-contato">
+                                <a target="_blank" href="https://byancasouza.github.io/insta_paula_home/">
+                                    <button>Prévia</button>
+                                </a>
+                            </div>
+                          </div>
+
+                        </div>  <!-- overlay -->
+                    </div> <!-- img-port -->
+
+                </div> <!-- flex -->
+
+            </div> <!-- interface -->
+
+        </section>
+
+        <section class="contato-form" id="contato">
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <section class="contato">
+            
+                        <h2 class="titulo">REDES SOCIAIS</h2>
+                        <div class="contato-info espaco">
+                            <a href="https://www.instagram.com/byalourenco_/?next=%2F" target="_blank">
+                                <i class="fa-brands fa-instagram"></i> Instagram
+                            </a>
+                            <a href="https://www.linkedin.com/in/byanca-louren%C3%A7o-1aa103351/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/byancalourenco" target="_blank">
+                                <i class="fa-brands fa-github"></i> GitHub - escola
+                            </a>
+                            <a href="https://github.com/byancasouza" target="_blank">
+                                <i class="fa-brands fa-github"></i> GitHub - projetos
+                            </a>
+                        </div>
+                    </section>
+                  </div>
+                  <div class="col">
+                    <section class="formulario">
+
+                        <div class="interface">
+            
+                            <h2 class="titulo">ENTRE EM CONTATO</h2> 
+            
+                            <form class="espaco" action="https://api.staticforms.xyz/submit" method="post">
+            
+                                <input type="text" name="name" id="" placeholder="Seu nome:" required> <!-- placeholder="" : palavra no fundo -->
+                                <input type="email" name="email" id="" placeholder="Seu e-mail:" required> 
+                                <!-- <input type="text" name="" id="" placeholder="Seu celular:">  -->
+            
+                                <textarea name="message" id="" placeholder="Sua mensagem:" required></textarea>
+            
+                                <div class="btn-enviar">
+                                    <input type="submit" value="ENVIAR">
+                                </div>
+
+                                <input type="hidden" name="accessKey" value="241a2c95-02ef-4298-98ec-6ee5749cd8ce">
+                                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+            
+                            </form> <!-- btn-enviar -->
+            
+                        </div> <!-- interface -->
+            
+                    </section>
+                  </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-container">
+            <p>&copy; 2024 Byanca Lourenço. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="https://github.com/byancalourenco" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/byalourenco_/?next=%2F" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/byanca-louren%C3%A7o-1aa103351/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        
+    </footer>
+
+    <!-- js - bootstrap -->
+    <script src="js\bootstrap.bundle.js"></script>
+    <script src="js\script.js"></script>
+</body>
+</html>
