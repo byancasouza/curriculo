@@ -46,10 +46,6 @@ button:hover, form .btn-enviar input:hover{
     transform: scale(1.05);
 }
 
-.btn-contato button a{
-    color: #fff;
-}
-
 h2.titulo{
     color: #fff;
     font-size: 38px;
@@ -1039,6 +1035,16 @@ footer {
         align-items: center;
         text-align: center;
         margin-top: 40px;
+    }
+
+    /* BOTÃO */
+
+    .btn-contato a button{
+        color: #000000;
+    }
+
+    .btn-social a button i{
+        color: #000000;
     }
 
 }
